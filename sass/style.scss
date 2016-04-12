@@ -11,14 +11,16 @@ body {
   min-height: 101vh;
 }
 nav {
-  // display: block;
-  background-color: white;
-  // position: relative;
   height: 50px;
   background-color: rgba(green, .5);
-  position: fixed;
   width: 100%;
+  position: relative;
+  margin-top: 100px;
+}
+nav.fixed{
+  position: fixed;
   top: 25px;
+
 }
 
 .home-link{
@@ -51,7 +53,7 @@ nav {
       transition: color 0.5s, background 1s;
       text-decoration: none;
       &:hover{
-        background-color: rgba(0, 0, 0,.5);
+        background-color: rgba(turquoise, .5);
         color: yellow;
       }
     }
@@ -59,11 +61,10 @@ nav {
 }
 
 #banner {
-  margin-top: calc(10vh + 50px);
+  // margin: 110px 0;
   width: 100%;
   flex: 1 1 auto;
   height: 100%;
-  margin-bottom: calc(5vh + 50px);
   img {
     width: 100%;
     height: auto;

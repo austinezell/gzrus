@@ -16,10 +16,13 @@ nav {
   width: 100%;
   position: relative;
   margin-top: 100px;
+  &.fixed{
+    position: fixed;
+    top: 25px;
+    margin-top: 0;
+  }
 }
 nav.fixed{
-  position: fixed;
-  top: 25px;
 
 }
 
@@ -46,10 +49,11 @@ nav.fixed{
     height: 100%;
     display: inline-block;
     a{
-      display: inline-block;
       padding: 14px 20px;
+      display: inline-block;
       color:white;
       font-size: 20px;
+      border-radius: 10px 5px;
       transition: color 0.5s, background 1s;
       text-decoration: none;
       &:hover{
@@ -68,6 +72,9 @@ nav.fixed{
   img {
     width: 100%;
     height: auto;
+  }
+  &.top-margin{
+    margin-top: 150px;
   }
 }
 

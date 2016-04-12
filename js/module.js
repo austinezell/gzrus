@@ -5,14 +5,21 @@
 
   stateConfig.$inject = ["$urlRouterProvider", "$stateProvider"]
   function stateConfig($urlRouterProvider, $stateProvider){
+    $urlRouterProvider.otherwise('/')
     $stateProvider
     .state("home", {
       url: "/",
-      templateUrl: "./templates/home.html",
-      controller: "HomeCtrl",
-      controllerAs: "Home"
+      templateUrl: "./templates/home.html"
+      // controller: "HomeCtrl",
+      // controllerAs: "Home"
     })
-    .state("")
+    .state("music", {
+      url: "/sick_trax",
+      templateUrl: "./templates/music.html"
+      //     controller: "MusicCtrl",
+      //     controllerAs: "Music"
+    })
+    //   .state("")
   }
 
 }());

@@ -5,28 +5,37 @@
   <title>GZRUs</title>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body ng-app="gz">
   <nav id="siteNav" class>
     <a href="" class="home-link" title="To the G'z!">
       <img src="./images/thumbnail.png" alt="G'z thumbnail">
     </a>
     <ul class="nav-links-left">
-      <li><a href="">test</a></li>
-      <li><a href="">test</a></li>
-      <li><a href="">test</a></li>
-      <li><a href="">test</a></li>
+      <li><a ui-sref="home">test</a></li>
+      <li><a ui-sref="home">test</a></li>
+      <li><a ui-sref="home">test</a></li>
+      <li><a ui-sref="home">test</a></li>
     </ul>
   </nav>
-  <section id="banner">
+
+  <div ui-view id="main">
+
+  </div>
+
+  <!--
+  <div id="banner">
     <img src="./images/GsLogo.jpg" alt="Main Logo">
-  </section>
+  </div>
 
-  <section class="half" id="shows">
+  <div class="half" id="shows">
 
-  </section><section class="half" id="tracks">
+  </div><div class="half" id="tracks">
 
-  </section>
-
-  <script src="./main.js" charset="utf-8"></script>
+  </div> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-animate.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js" charset="utf-8"></script>
+  <script src="./js/module.js" charset="utf-8"></script>
+  <script src="./js/sticky-nav.js" charset="utf-8"></script>
 </body>
 </html>

@@ -9,8 +9,10 @@
     .state("home", {
       url: "/",
       templateUrl: "./templates/home.html",
-      controller: "PageCtrl"
+      controller: "HomeCtrl",
+      controllerAs: "Home"
     })
+    .state("")
   }
 
 }());

@@ -1,5 +1,4 @@
 
-
 html {
   width: 100%;
   overflow-x: hidden;
@@ -12,12 +11,29 @@ body {
   min-height: 101vh;
 }
 nav {
-  display: block;
+  // display: block;
   background-color: white;
-  position: relative;
+  // position: relative;
   height: 50px;
   background-color: rgba(green, .5);
+  position: fixed;
+  width: 100%;
+  top: 25px;
 }
+
+.home-link{
+  flex: 1 1 auto;
+  display: inline-block;
+  height: 100%;
+  margin: -24px 25px 0;
+  img {
+    transition: filter 1s ease;
+    &:hover{
+      filter: hue-rotate(180deg);
+    }
+  }
+}
+
 .nav-links-left {
   list-style-type: none;
   margin: 0 25px;
@@ -43,7 +59,7 @@ nav {
 }
 
 #banner {
-  margin-top: calc(10vh + 0px);
+  margin-top: calc(10vh + 50px);
   width: 100%;
   flex: 1 1 auto;
   height: 100%;

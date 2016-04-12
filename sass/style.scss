@@ -1,0 +1,29 @@
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+#banner {
+  margin-top: 80px;
+  height: 400px;
+  background-color: blue;
+}
+
+.half {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  height: 100px;
+}
+
+#shows {
+  background-color: white;
+}
+
+#tracks {
+  background-color: yellow;
+}

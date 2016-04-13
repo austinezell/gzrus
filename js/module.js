@@ -7,13 +7,17 @@
   function stateConfig($urlRouterProvider, $stateProvider){
     $urlRouterProvider.otherwise('/')
     $stateProvider
-    .state("home", {
+    .state("main", {
+      abstract: true,
+      template: "<div ui-view id=\"main\"></div>"
+    })
+    .state("main.home", {
       url: "/",
       templateUrl: "./templates/home.html"
       // controller: "HomeCtrl",
       // controllerAs: "Home"
     })
-    .state("music", {
+    .state("main.music", {
       url: "/sick_trax",
       templateUrl: "./templates/music.html"
       //     controller: "MusicCtrl",

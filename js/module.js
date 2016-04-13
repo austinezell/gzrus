@@ -23,7 +23,10 @@
       //     controller: "MusicCtrl",
       //     controllerAs: "Music"
     })
-    //   .state("")
+    .state("main.tour", {
+      url: "/dope_shows",
+      templateUrl: "./templates/dates.html"
+    })
   }
 
 }());

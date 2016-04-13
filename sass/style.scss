@@ -14,8 +14,10 @@ nav {
   height: 50px;
   background-color: rgba(green, .5);
   width: 100%;
+  position: fixed;
+  top: 25px;
   position: relative;
-  margin-top: 25px;
+  z-index: 10;
 }
 
 .home-link{
@@ -60,18 +62,6 @@ nav {
   }
 }
 
-#banner {
-  width: 100%;
-  flex: 1 1 auto;
-  height: 100%;
-  img {
-    width: 100%;
-    height: auto;
-  }
-  &.top-margin{
-    margin-top: 150px;
-  }
-}
 
 .half {
   display: inline-block;
@@ -89,51 +79,66 @@ nav {
 }
 
 #main {
-  height: calc(100vh - 0px);
-  width: 90%;
+  height: 200vh;
+  position: absolute;
+  vertical-align: top;
+  width: 200vh;
   padding: 25px;
-  border-radius: 1000px 1000px 0 0;
   background-color: white;
-  margin: 0 auto;
   border: 5px solid white;
+  position: relative;
+  border-radius: 100vh;
+  box-shadow: 10px 10px 20px black, -10px -10px 20px black, 10px -10px 20px black;
+}
+.inner-circle{
+  // opacity: 0;
+  height: 155px;
+  position: absolute;
+  bottom: -45px;
+  border-radius: 155px 155px 0 0;
+  border: 1px solid black;
+  background-color: white;
+  z-index: 9;
+  width: 25%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+#home{
+  background-color: blue;
+}
+#music {
+  background-color: red;
 }
 
 #main.ng-enter, #main.ng-leave {
   position: absolute;
+  transition: all 2s ease-in-out;
   z-index: 0;
-  width: 100%;
+  width: 200vh;
   left: 0;
   right: 0;
-  transition: all .5s ease-in-out;
   overflow: hidden;
 }
 
 #main.ng-enter {
-  background-color: black;
-  transition-delay: .5s;
-  transform:rotateZ(270deg);
-  width: 200px;
-  border-radius: 200px;
+  transform:rotateZ(180deg);
+  z-index: 0;
 }
 
 #main.ng-enter-active {
-  background-color: white;
-  transform:rotateZ(720deg);
-  width: 90%;
-  border-radius: 0;
+  transform:rotateZ(360deg);
+  z-index: 5;
 }
 
 #main.ng-leave {
+  z-index: 5;
   transform:rotateZ(0deg);
-  width: 90%;
-  background-color: white;
-  border-radius: 0;
+  color: white;
 }
 
 #main.ng-leave-active {
-  background-color: black;
-  transform:rotateZ(270deg);
-  width: 200px;
-  border-radius: 200px;
-
+  z-index: 0;
+  transform:rotateZ(180deg);
 }

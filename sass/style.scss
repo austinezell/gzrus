@@ -115,34 +115,31 @@ nav {
   height: 100px;
 }
 
-.inner-circle{
-  height: 25vh;
-  position: absolute;
-  bottom: 0;
-  border-radius: 25vh 25vh 0 0;
-  border: 1px solid white;
-  background-image: url("../images/GsLogo.jpg");
-  background-size: contain;
-  width: 50vh;
-  right: 0;
-  left: 0;
-  z-index: 10;
-  margin: 0 auto;
-}
-
+// .inner-circle{
+//   height: 25vh;
+//   position: absolute;
+//   bottom: 0;
+//   border-radius: 25vh 25vh 0 0;
+//   border: 1px solid white;
+//   background-image: url("../images/GsLogo.jpg");
+//   background-size: contain;
+//   width: 50vh;
+//   right: 0;
+//   left: 0;
+//   z-index: 10;
+//   margin: 0 auto;
+// }
+//
 .view {
   position: relative;
   top: 100px;
   height: 400px;
 }
-#dates {
-}
 
-#home{
-}
-#music {
-}
 #main {
+  background-image: url('../images/test12.png');
+  background-position: center bottom;
+  background-size: cover;
   z-index: 15;
   height: 100vh;
   background-color: black;

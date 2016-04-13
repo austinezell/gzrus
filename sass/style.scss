@@ -115,21 +115,12 @@ nav {
   height: 100px;
 }
 
-// .inner-circle{
-//   height: 25vh;
-//   position: absolute;
-//   bottom: 0;
-//   border-radius: 25vh 25vh 0 0;
-//   border: 1px solid white;
-//   background-image: url("../images/GsLogo.jpg");
-//   background-size: contain;
-//   width: 50vh;
-//   right: 0;
-//   left: 0;
-//   z-index: 10;
-//   margin: 0 auto;
-// }
-//
+.show {
+  background-color: rgba(green, .4);
+  box-shadow: 5px 5px 10px darken(green, 20%);
+  border-radius: 15px;
+}
+
 .view {
   position: relative;
   top: 100px;

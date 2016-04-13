@@ -85,21 +85,20 @@ nav {
   margin: 0 auto;
 }
 
-#banner {
-  height: 100%;
-}
 .view {
   position: relative;
   top: 100px;
   height: 400px;
+}
+#dates {
+  background-color: green;
 }
 
 #home{
   background-color: blue;
 }
 #music {
-  background-image: url('../images/GsLogo.jpg');
-  background-image: contain;
+  background-color: red;
 }
 #main {
   height: 100vh;

@@ -1,11 +1,12 @@
 
 html {
   width: 100%;
-  overflow-x: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
 
 body {
-  background-color: black;
+  background-color: rgb(87, 87, 87);
   padding: 0;
   margin: 0;
 }
@@ -23,6 +24,8 @@ nav {
   height: 100%;
   margin: -24px 25px 0;
   img {
+    position: relative;
+    z-index: 10;
     border-radius: 100px;
     transition:filter 10s;
     box-shadow: 5px 5px 10px black;
@@ -57,13 +60,6 @@ nav {
   }
 }
 
-#main {
-  height: 200px;
-  width: 90%;
-  background-color: white;
-  margin: 0 auto;
-}
-
 #banner {
   width: 100%;
   flex: 1 1 auto;
@@ -90,4 +86,54 @@ nav {
 
 #tracks {
   background-color: yellow;
+}
+
+#main {
+  height: calc(100vh - 0px);
+  width: 90%;
+  padding: 25px;
+  border-radius: 1000px 1000px 0 0;
+  background-color: white;
+  margin: 0 auto;
+  border: 5px solid white;
+}
+
+#main.ng-enter, #main.ng-leave {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+}
+
+#main.ng-enter {
+  background-color: black;
+  transition-delay: .5s;
+  transform:rotateZ(270deg);
+  width: 200px;
+  border-radius: 200px;
+}
+
+#main.ng-enter-active {
+  background-color: white;
+  transform:rotateZ(720deg);
+  width: 90%;
+  border-radius: 0;
+}
+
+#main.ng-leave {
+  transform:rotateZ(0deg);
+  width: 90%;
+  background-color: white;
+  border-radius: 0;
+}
+
+#main.ng-leave-active {
+  background-color: black;
+  transform:rotateZ(270deg);
+  width: 200px;
+  border-radius: 200px;
+
 }

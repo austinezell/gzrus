@@ -175,3 +175,18 @@ nav {
   z-index: 5;
   transform:rotateZ(180deg);
 }
+
+
+@media only screen and (orientation:portrait){
+  #main {
+    margin-top: 100px;
+    height: 100vw;
+    width: 100vw;
+    border-radius: 100vw;
+    background-image: url('../images/test123.png');
+    background-position: center;
+    background-size: contain;
+    transform-origin: 50% 50%;
+
+  }
+}

@@ -84,15 +84,14 @@ nav {
   vertical-align: top;
   width: 200vh;
   padding: 25px;
+  color: white;
   background-color: white;
-  border: 5px solid white;
   position: relative;
   border-radius: 100vh;
   overflow: hidden;
-  box-shadow: 10px 10px 20px black, -10px -10px 20px black, 10px -10px 20px black;
+  box-shadow: 10px 10px 20px black, -10px -10px 20px black, 10px -10px 20px black, -10px 10px 20px black;
 }
 .inner-circle{
-  // opacity: 0;
   height: 155px;
   position: absolute;
   bottom: -45px;
@@ -104,6 +103,10 @@ nav {
   right: 0;
   left: 0;
   margin: 0 auto;
+}
+#home, #music {
+  position: relative;
+  top: 100px;
 }
 
 #home{
@@ -118,12 +121,13 @@ nav {
   transition: all 2s ease-in-out;
   z-index: 0;
   width: 200vh;
-  // left: 0;
-  // right: 0;
+  left: 0;
+  right: 0;
   overflow: hidden;
 }
 
 #main.ng-enter {
+  box-shadow: none;
   transform:rotateZ(180deg);
   z-index: 0;
 }

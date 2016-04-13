@@ -8,22 +8,13 @@ body {
   background-color: black;
   padding: 0;
   margin: 0;
-  min-height: 200vh;
 }
 nav {
   height: 50px;
   background-color: rgba(green, .5);
   width: 100%;
   position: relative;
-  margin-top: 100px;
-  &.fixed{
-    position: fixed;
-    top: 25px;
-    margin-top: 0;
-  }
-}
-nav.fixed{
-
+  margin-top: 25px;
 }
 
 .home-link{
@@ -32,9 +23,11 @@ nav.fixed{
   height: 100%;
   margin: -24px 25px 0;
   img {
-    transition: filter 1s ease;
+    border-radius: 100px;
+    transition:filter 10s;
+    box-shadow: 5px 5px 10px black;
     &:hover{
-      filter: hue-rotate(180deg);
+      filter: hue-rotate(1800deg);
     }
   }
 }
@@ -54,7 +47,7 @@ nav.fixed{
       color:white;
       font-size: 20px;
       border-radius: 10px 5px;
-      transition: color 0.5s, background 1s;
+      transition: color 0.5s, background .6s;
       text-decoration: none;
       &:hover{
         background-color: rgba(turquoise, .5);
@@ -66,10 +59,9 @@ nav.fixed{
 
 #main {
   height: 200px;
+  width: 90%;
   background-color: white;
-  &.top-margin{
-    margin-top: 150px;
-  }
+  margin: 0 auto;
 }
 
 #banner {

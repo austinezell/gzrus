@@ -5,6 +5,22 @@ html {
   overflow: hidden;
 }
 
+.shows {
+  position: relative;
+}
+
+.show {
+  display: inline-block;
+  transform: scale(0.6);
+  .title {
+
+  }
+}
+
+.show.active {
+  transform: scale(1);
+}
+
 body {
   background-color: rgb(87, 87, 87);
   padding: 0;
@@ -78,10 +94,10 @@ nav {
   border: 1px solid white;
   background-image: url("../images/GsLogo.jpg");
   background-size: contain;
-  z-index: 9;
   width: 50vh;
   right: 0;
   left: 0;
+  z-index: 10;
   margin: 0 auto;
 }
 
@@ -110,16 +126,16 @@ nav {
   border-bottom: 0;
   border-radius: 100vh 100vh 0 0;
   overflow: hidden;
-  box-shadow: -20px -20px 40px black, -20px -20px 40px black, 20px -20px 40px black, -10px -10px 0 black, -10px -10px 0 black, 10px -10px 0 black;
+  box-shadow: -20px -20px 40px black, 20px 20px 40px black, 20px -20px 40px black, -10px -10px 0 black, -10px -10px 0 black, 10px 10px 0 black, 10px -10px 0 black;
   margin: 0 auto;
   left: 0;
   right: 0;
+  transform-origin: 100vh 100vh;
 }
 
 #main.ng-enter, #main.ng-leave {
   position: absolute;
-  transition: all 1s ease-out;
-  transform-origin: 100vh 100vh;
+  transition: all .8s ease-out;
 }
 
 #main.ng-enter {
@@ -133,13 +149,13 @@ nav {
 }
 
 #main.ng-leave {
+  box-shadow: -20px -20px 40px black, 20px -20px 40px black, -10px -10px 0 black, -10px -10px 0 black, 10px -10px 0 black;
   z-index: 5;
   transform:rotateZ(0deg);
   color: white;
 }
 
 #main.ng-leave-active {
-
   z-index: 5;
   transform:rotateZ(180deg);
 }

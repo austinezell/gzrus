@@ -21,6 +21,18 @@ body{
   }
 }
 
+#carousel {
+  border: 5px solid white;
+  // background-color: grey;
+  img{
+    border: 5px solid white;
+    // box-shadow: 10px 10px white;
+    border: 1px solid grey;
+    // overflow: hidden;
+    border-radius: 10px;
+  }
+}
+
 .shows {
   white-space: nowrap;
   margin: 0 auto;
@@ -175,7 +187,7 @@ nav {
 
 #main.ng-leave {
   box-shadow: -20px -20px 40px black, 20px -20px 40px black, -10px -10px 0 black, -10px -10px 0 black, 10px -10px 0 black;
-  // z-index: 15;
+  z-index: 15;
   // border-bottom: 2px solid white;
   transform:rotateZ(0deg);
   color: white;

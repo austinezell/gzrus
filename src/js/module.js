@@ -13,9 +13,9 @@
     })
     .state("main.home", {
       url: "/",
-      templateUrl: "./templates/home.html"
-      // controller: "HomeCtrl",
-      // controllerAs: "Home"
+      templateUrl: "./templates/home.html",
+      controller: "PicCtrl",
+      controllerAs: "Pic"
     })
     .state("main.music", {
       url: "/sick_trax",

@@ -103,6 +103,16 @@ nav {
   // z-index: 4p
 }
 
+@keyframes rotate-hue {
+  0% {
+    filter: hue-rotate(360deg);
+
+  }
+  100% {
+    filter: hue-rotate(720deg);
+  }
+}
+
 .home-link{
   flex: 1 1 auto;
   display: inline-block;
@@ -112,11 +122,8 @@ nav {
     position: relative;
     z-index: 16;
     border-radius: 100px;
-    transition:filter 10s;
     box-shadow: 5px 5px 10px black;
-    &:hover{
-      filter: hue-rotate(1800deg);
-    }
+    animation: rotate-hue 2s infinite;
   }
   a{
     position: relative;

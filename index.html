@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>GZRUS</title>
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./dist/styles/style.css">
 </head>
 <body ng-app="gz">
   <nav id="siteNav" class>
     <a ui-sref="main.home" class="home-link" title="To the G'z!">
-      <img src="./images/thumbnail.png" alt="G'z thumbnail">
+      <img src="./dist/images/thumbnail.png" alt="G'z thumbnail">
     </a>
     <ul class="nav-links-left">
       <li><a ui-sref="main.music">Releases</a></li>
@@ -21,10 +21,7 @@
     </div>
   </div>
 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.min.js" charset="utf-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-animate.js" charset="utf-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js" charset="utf-8"></script>
-  <script src="./js/module.js" charset="utf-8"></script>
+  <script src="./dist/js/vendor.bundle.js" charset="utf-8"></script>
+  <script src="./dist/js/bundle.js" charset="utf-8"></script>
 </body>
 </html>

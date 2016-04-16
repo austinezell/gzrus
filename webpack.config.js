@@ -4,7 +4,7 @@ const webpack = require("webpack");
 module.exports = {
   entry: {
     app: "./src/js/index.js",
-    vendor: ["angular", "jquery", "angular-animate", "angular-ui-router", "jr3dcarousel"]
+    vendor: ["angular", "angular-animate", "angular-ui-router"]
   },
   output: {
     path: __dirname + '/dist/js/',
@@ -18,7 +18,7 @@ module.exports = {
     }]
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js")
-    // new webpack.optimize.UglifyJsPlugin({minimize: true})
+    new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js"),
+    new webpack.optimize.UglifyJsPlugin({minimize: true})
   ]
 };

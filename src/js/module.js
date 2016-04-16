@@ -27,16 +27,22 @@
       url: "/dope_shows",
       templateUrl: "./templates/dates.html"
     })
-    .state("main.about", {
-      url: "/gz",
-      templateUrl: "<div ui-view></div>",
+    .state("main.bio", {
+      template: "<div ui-view></div>",
       abstract: true
-      }
     })
-    .state("main.about.both", {
+    .state("main.bio.both", {
       url: "/tunnel_brothers",
       templateUrl: "./templates/bros.html"
       // controller: "ContentCtrl"
+    })
+    .state("main.bio.brett", {
+      url: "/brett",
+      templateUrl: "./templates/bro.html"
+    })
+    .state("main.bio.trevor", {
+      url: "/trevor",
+      templateUrl: "./templates/bro.html",
     })
   }
 

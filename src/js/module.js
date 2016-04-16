@@ -27,6 +27,17 @@
       url: "/dope_shows",
       templateUrl: "./templates/dates.html"
     })
+    .state("main.about", {
+      url: "/gz",
+      templateUrl: "<div ui-view></div>",
+      abstract: true
+      }
+    })
+    .state("main.about.both", {
+      url: "/tunnel_brothers",
+      templateUrl: "./templates/bros.html"
+      // controller: "ContentCtrl"
+    })
   }
 
 }());

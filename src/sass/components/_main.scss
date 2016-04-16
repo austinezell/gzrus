@@ -1,0 +1,26 @@
+.navigation {
+  left: 0;
+}
+
+#carousel {
+  border: 15px solid white;
+  animation-delay: 1s;
+  animation: fadeIn 1s;
+  // height: 400px;
+  img{
+    border: 1px solid grey;
+    box-shadow: 10px 10px 5px black, 10px -10px 5px black, -10px 10px 5px black, -10px -10px 5px black;
+    border-radius: 10px;
+  }
+  &::before{
+    content: " ";
+    transition-delay: .2s;
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 15px solid green;
+  }
+}

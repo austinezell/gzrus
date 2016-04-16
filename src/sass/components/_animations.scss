@@ -1,0 +1,21 @@
+@keyframes rotate-hue {
+  0% {
+    filter: hue-rotate(360deg);
+
+  }
+  100% {
+    filter: hue-rotate(720deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}

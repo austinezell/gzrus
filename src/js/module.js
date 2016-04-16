@@ -28,7 +28,7 @@
       templateUrl: "./templates/dates.html"
     })
     .state("main.bio", {
-      template: "<div ui-view></div>",
+      template: "<div ui-view id=\"g-z\"></div>",
       abstract: true
     })
     .state("main.bio.both", {

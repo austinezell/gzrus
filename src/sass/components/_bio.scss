@@ -1,24 +1,31 @@
 #g-z{
   height: 100%;
-
 }
 
 .about {
-  // background-color: rgba(lighten(lightgreen, 10), .8);
-  box-shadow: 10px 10px 5px $shadow, 10px -10px 5px $shadow,
-  -10px 10px 5px $shadow, -10px -10px 5px $shadow,
+  box-shadow: 10px 10px 5px darken(green, 23), 10px -10px 5px darken(green, 23),
+  -10px 10px 5px darken(green, 23), -10px -10px 5px darken(green, 23),
   20px 20px white,
   -20px 20px white,
   -20px -20px white,
   20px -20px white,
-  20px 20px white,
-  inset 20px 20px , inset -20px 20px,  inset -20px -20px, inset 20px -20px;
+  20px 20px white;
   background-image: url("../images/gzsout.jpg");
-  border: 1px solid white;
   background-position: center;
-  perspective: 300px;
   color: black;
-  width: 50%;
-  padding: 5%;
+  // border: 1px solid green;
+  width: 60%;
+  // padding: 2%;
   border-radius: 25px;
+  display: flex;
+  position: relative;
+}
+.about-paragraph {
+  background-color: rgba(lighten(green, 20), .3);
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+  border-radius: 25px;
+  padding: 6% 8%;
+  // position: absolute;
 }

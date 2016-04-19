@@ -143,7 +143,9 @@ nav {
   border: 4px solid white;
   border-bottom: 0;
   border-radius: 100vh 100vh 0 0;
-  box-shadow: -20px -20px 40px $shadow, 20px 20px 40px $shadow, 20px -20px 40px $shadow, -10px -10px 0 $shadow, -10px 10px 0 $shadow, 10px 10px 0 $shadow, 10px -10px 0 $shadow;
+  box-shadow:
+  -10px -10px 0 black, -10px 10px 0 black, 10px 10px 0 black, 10px -10px 0 black,
+  -20px -20px 40px $shadow, 20px 20px 40px $shadow, 20px -20px 40px $shadow, -20px 20px 40px $shadow;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -152,7 +154,7 @@ nav {
 
 #main.ng-enter, #main.ng-leave {
   position: absolute;
-  overflow: hidden;
+  // overflow: hidden;
   transition: transform .6s ease-out;
 }
 

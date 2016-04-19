@@ -167,7 +167,9 @@ nav {
 }
 
 #main.ng-leave {
-  box-shadow: -20px -20px 40px $shadow, 20px -20px 40px $shadow, -10px -10px 0 $shadow, -10px -10px 0 $shadow, 10px -10px 0 $shadow;
+  box-shadow: 
+  -10px -10px 0 black, -10px -10px 0 black, 10px -10px 0 black,
+  -20px -20px 40px $shadow, 20px -20px 40px $shadow;
   z-index: 15;
   transform:rotateZ(0deg);
   color: white;
